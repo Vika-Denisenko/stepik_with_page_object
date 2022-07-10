@@ -27,8 +27,6 @@ def test_guest_can_add_product_to_basket(browser):
     product_page.get_alert_message_price()
 
 
-# pytest -s test_product_page.py
-
 def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
     product_page = ProductPage(browser, link)
@@ -122,3 +120,5 @@ class TestUserAddToBasketFromProductPage:
 # pytest -v --tb=line --language=en test_product_page.py
 # pytest -m login_user
 # pytest -s -v -m need_review test_product_page.py
+# pytest -s test_product_page.py
+
